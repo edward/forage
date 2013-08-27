@@ -1,0 +1,259 @@
+<div id="sub">
+  <div id="header-wrapper">
+     <div id="header">
+        <!-- Begin logo -->
+        <h1 id="logo">
+           <a href="/">batman.js</a>
+        </h1>
+        <!-- End logo -->
+     </div>
+  </div>
+  <div id="content-wrapper">
+     <div id="content">
+        <!-- Begin left-sidebar -->
+        <div id="left-sidebar">
+           <ul class="subnav">
+              <li><a href="http://batmanjs.org/examples.html" target="_blank">Batman Examples</a></li>
+              <li><a href="http://batmanjs.org/docs/batman.html" target="_blank">Batman Documentation</a></li>
+              <li><a href="http://coffeescript.org/" target="_blank">CoffeeScript Documentation</a></li>
+           </ul>
+        </div>
+        <!-- End left-sidebar -->
+        <!-- Begin content-column-wrapper -->
+        <div id="content-column-wrapper">
+          <h2>Batman.js</h2>
+          <h3>A client-side framework for Rails developers</h3>
+          <p>This page aims to be a collection of everything that batman.js is capable of. Over time it will grow to include more comprehensive examples, in addition to live applications using batman.js.</p>
+
+          <h4>Generate your resources</h4>
+          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+          <div class="highlight">
+            rails generate batman:app<br />
+            rails generate batman:scaffold Post title:string content:string<br />
+          </div>
+
+          <h4>Create your bindings</h4>
+          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+          <div style="padding: 10px">
+            <span>First Name:</span><input type="text" data-bind="firstName"><br />
+            <span>Last Name:</span><input type="text" data-bind="lastName"><br />
+            <span>Hello, my name is <span data-bind="fullName"></span></span><br />
+          </div>
+
+          <h4>Connect to Rails</h4>
+          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+        <!-- End content-column-wrapper -->
+     </div>
+  </div>
+</div>
+<style type="text/css" media="screen">
+  /* ============= */
+  /* = CSS Reset = */
+  /* ============= */
+
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td {
+      margin: 0;
+      padding: 0;
+      border: 0;q
+      outline: 0;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 100%;
+      font-family: inherit;
+      vertical-align: baseline;
+  }
+
+  /* remember to define focus styles! */
+  :focus { outline: 0; }
+  body { line-height: 1; color: black; background: white; }
+  ol, ul { list-style: none; }
+  /* tables still need 'cellspacing="0"' in the markup */
+  table { border-collapse: separate; border-spacing: 0; }
+  caption, th, td { text-align: left; font-weight: normal; }
+  blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+  blockquote, q { quotes: "" ""; }
+
+  /* ================= */
+  /* = Global Styles = */
+  /* ================= */
+
+  * { margin:0; padding:0; }
+  img { border:0px; }
+  html, body { height: 100%; }
+  body { background: url(/assets/batman/content-bg.png); font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2", sans-serif; font-size:13px; font-style: normal; font-weight: 400; color:#222; }
+  body p { color: #222; line-height: 20px; margin-bottom: 20px; }
+
+  h1, h2, h3, h4, h5, h6 { font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2", sans-serif; font-size:13px; font-style: normal; font-weight: 700; }
+  h2 { font-size: 30px; color: #373862; margin-bottom: 15px; }
+  #home h3 { font-size: 22px; color: #373862; margin-bottom: 30px; }
+  h3 { font-size: 22px; color: #373862; margin-bottom: 20px; }
+  h4 { font-size: 16px; color: #373862; line-height: 22px; margin-bottom: 15px; }
+  h5 { font-size: 14px; color: #000; line-height: 20px; margin-bottom: 15px; }
+
+  .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+  .clear { clear:both }
+  .float-right { float:right }
+
+  /* ========= */
+  /* = Links = */
+  /* ========= */
+
+  a:link { color: #373862; text-decoration: none; }
+  a:hover { color: #47497c; text-decoration: none; }
+  a:focus { color: #47497c; text-decoration: none; }
+  a:visited { color: #47497c; text-decoration: none; }
+
+  #intro-statement a:link { color: #fdf9cc; }
+  #intro-statement a:hover { color: #fffdec; }
+  #intro-statement a:focus { color: #fffdec; }
+  #intro-statement a:visited { color: #fffdec; }
+
+  #download-box a.release-links { text-decoration: underline; }
+  #download-box a.release-links:link { color: #fdf9cc; }
+  #download-box a.release-links:hover { color: #fffdec; }
+  #download-box a.release-links:focus { color: #fffdec; }
+  #download-box a.release-links:visited { color: #fffdec; }
+
+  #footer-content a:link { color: #8688a0; }
+  #footer-content a:hover { color: #9c9ebb; }
+  #footer-content a:focus { color: #9c9ebb; }
+  #footer-content a:visited { color: #9c9ebb; }
+
+  /* ================= */
+  /* = Global Layout = */
+  /* ================= */
+
+  #logo { float: left; margin-left: -30px; }
+  #logo a { display: block; background: url(/assets/batman/logo.png) top left no-repeat; width: 276px; height: 65px; text-indent: -999px; }
+
+  #content-wrapper { min-height: 100%; padding-bottom: 32px; background: url(/assets/batman/content-bg-fade.png) top left repeat-x; }
+  #content { overflow:auto; margin: 0 auto; padding: 45px 32px 190px 32px; width: 932px; }
+  #right-sidebar { float: left; width: 267px; padding-left: 32px; border-left: 1px dashed #c6c7da; }
+  #left-sidebar { float: left; width: 267px; padding-right: 32px; }
+
+  ul.blog-list { margin-bottom: 32px; font-size: 13px; }
+  ul.blog-list li.blog-post-date { font-size: 13px; font-weight: bold; font-style: italic; margin-bottom: 12px; color: #000;  }
+  ul.blog-list a.read-more { font-weight: bold; }
+
+  a.icon-rss { float: left; display: block; width: 16px; height: 20px; overflow: hidden; text-indent: -999px; margin-right: 14px; background: url(/assets/batman/icon-rss.png) 0 4px no-repeat; }
+  a.icon-twitter { float: left; display: block; width: 26px; height: 20px; overflow: hidden; text-indent: -999px; margin-right: 10px; background: url(/assets/batman/icon-twitter.png) 0 2px no-repeat; }
+
+  #footer-wrapper { position: relative; margin-top: -190px; /* negative value of footer height */ height: 190px; clear:both; background: #181818; }
+  #footer-content { width: 932px; margin: 0 auto; padding-top: 64px; color: #6c6d80; }
+  #footer-content ul li { line-height: 26px; }
+  #footer-content ul li a.inline-link { margin-left: 15px; }
+  #footer-content a.shopify-logo { float: right; }
+
+  /*Opera Fix*/
+  body:before { content:""; height:100%; float:left; width:0; margin-top:-32767px;/ }
+
+  #sub #header-wrapper { width: 100%; height: 155px; background: #1d1d2b url(/assets/batman/header-wrapper-bg.jpg) top center no-repeat; }
+  #sub #header-wrapper #header { margin: 0 auto; width: 932px; padding: 36px 32px 42px 32px; }
+
+  /* ============== */
+  /* = Navigation = */
+  /* ============== */
+
+  #navigation { float: right; }
+  #navigation ul { margin-top: 32px; color: #b3b3c3; font-size: 15px; text-shadow:1px 1px rgba(0,0,0,0.9)}
+  #navigation ul li { float: left; margin-right: 42px;}
+  #navigation ul li:last-child { float: left; margin-right: 0;}
+  #navigation ul li a { color: #b3b3c3; text-decoration: none; }
+  #navigation ul li a:hover { color: #fff; }
+  #navigation ul li.active a { color: #fff; background: #181826; padding: 6px 14px; cursor: default; border-bottom: 1px solid #333340; -moz-border-radius: 5px; border-radius: 5px; }
+
+  /* ======== */
+  /* = Home = */
+  /* ======== */
+
+  #home #header-wrapper { width: 100%; height: 470px; background: #1d1d2b url(/assets/batman/header-wrapper-bg.jpg) top center no-repeat; }
+  #home #header-wrapper #header { margin: 0 auto; width: 932px; padding: 36px 32px 42px 32px; }
+  #home #intro-statement { float: left; width: 600px; padding-top: 78px; margin-right: 32px; }
+  #home #intro-statement h2 { color: #b3b3c3; font-size: 30px; font-style: normal; font-weight: 400; margin-bottom: 26px; }
+  #home #intro-statement p { color: #b3b3c3; font-size: 18px; line-height: 28px; margin-bottom: 26px; }
+  #home #download-box { float: left; margin-top: 40px; width: 236px; min-height: 280px; padding: 32px; background: #181826 url(/assets/batman/download-box-top.png) center 1px no-repeat; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+  #home #download-box a.btn-download { display: block; text-indent: -999px; overflow: hidden; width: 235px; height: 50px; margin-bottom: 20px; cursor: pointer; background: url(/assets/batman/btn-download-batman.png) top left no-repeat; }
+  #home #download-box a.btn-download:hover { background-position: 0 -50px; }
+  #home #download-box p { font-size: 14px; line-height: 20px; margin-bottom: 18px; color: #fff; }
+  #home #download-box .title { color: #b3b3c3; }
+
+  #home #content-column-wrapper { float: left; width: 600px; padding-right: 32px; }
+  #home #content-column-1 { float: left; width: 268px; margin-right: 32px; }
+  #home #content-column-2 { float: left; width: 268px; margin-left: 32px; }
+
+  #home ul.feature-box { margin-bottom: 32px; }
+  #home ul.feature-box li.feature-image { margin-bottom: 20px; }
+  #home ul.feature-box li.feature-description { margin-bottom: 20px; }
+
+  input[type="text"].email-signup { font-size: 13px; text-align: left; width: 222px; padding: 4px; margin-top: 10px; margin-bottom: 10px; }
+  input[type="submit"].email-submit { font-size: 32px; margin-left: 15px; padding: 4px; }
+
+  /* ============ */
+  /* = Subpages = */
+  /* ============ */
+
+  #sub #content-column-wrapper-full { float: left; width: 100%; }
+  #sub #content-column-wrapper { float: left; width: 600px; padding-left: 32px; border-left: 1px dashed #d0d0d0; }
+  #sub #content-column-1 { float: left; width: 268px; margin-right: 32px; }
+  #sub #content-column-2 { float: left; width: 268px; margin-left: 32px; }
+
+  #sub ul.feature-box { margin-bottom: 32px; }
+  #sub ul.feature-box li.feature-image { margin-bottom: 20px; }
+  #sub ul.feature-box li.feature-description { margin-bottom: 20px; }
+
+  ul.subnav { margin-bottom: 32px; font-size: 14px; line-height: 20px; }
+  ul.subnav li { color: #8f90ac; padding-bottom: 15px; margin-top: 15px; border-bottom: 1px dashed #d0d0d0; }
+  ul.subnav li:first-child { margin-top: 0; }
+  ul.subnav li.active { font-weight: bold; color: #373862;  }
+  ul.subnav a { color: #8f90ac; display: block; }
+  ul.subnav a:hover { color: #6d6e93; }
+
+  #sub #download-box { float: right; margin: 0 0 32px 32px; width: 236px; padding: 32px 32px 10px 32px; background: #303153 url(/assets/batman/download-box-top.png) center 1px no-repeat; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+  #sub #download-box a.btn-download { display: block; text-indent: -999px; overflow: hidden; width: 235px; height: 50px; margin-bottom: 20px; cursor: pointer; background: url(/assets/batman/btn-download-batman.png) top left no-repeat; }
+  #sub #download-box a.btn-download:hover { background-position: 0 -50px; }
+  #sub #download-box p { font-size: 14px; line-height: 20px; margin-bottom: 18px; color: #fff; }
+  #sub #download-box .title { color: #b3b3c3; }
+
+  ul.content { margin-bottom: 20px; }
+  ul.content li { background: url(/assets/batman/bullet.png) 0 8px no-repeat; margin-bottom: 10px; padding-left: 20px; line-height: 20px; }
+
+  ol.content { margin-bottom: 20px; list-style: decimal; padding-left: 20px; }
+  ol.content li { margin-bottom: 10px; line-height: 20px; }
+
+  .callout-box { padding: 20px; border: 1px dashed #d0d0d0; background: #eeeef7; }
+
+  /* =========== */
+  /* = Twitter = */
+  /* =========== */
+
+  .tweet, .query { font-size: 13px; }
+  .tweet .tweet_list, .query .tweet_list { list-style-type: none; margin: 0; padding: 0; overflow-y: hidden; }
+  .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic { text-transform: uppercase; }
+  .tweet .tweet_list li:first-child { margin-top: 0; }
+  .tweet .tweet_list li, .query .tweet_list li { line-height: 20px; padding-bottom: 15px; margin-top: 15px; border-bottom: 1px dashed #d0d0d0; }
+  .tweet .tweet_list li:last-child, .query .tweet_list li:last-child { border-bottom: none; }
+  .tweet .tweet_list li a, .query .tweet_list li a { text-decoration: none; }
+  .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar { padding: 0 15px 30px 0; margin-top: 7px; float: left; }
+  .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img { vertical-align: middle; }
+  .tweet .tweet_list .tweet_time a { font-size: 13px; font-style: italic; }
+  .tweet .tweet_list .tweet_text { margin-bottom: 20px; }
+  .tweet .tweet_list .tweet_text a { text-decoration: none; }
+  a.tweet_user { margin-bottom: 5px; font-size: 13px; font-style: italic; }
+
+  .listy ul { list-style: url(/assets/batman/bullet.png) inside; margin-bottom: 20px; }
+
+
+  /* ======== */
+  /* = Code = */
+  /* ======== */
+
+
+  div.highlight { background:#FFFFFF; border:1px solid #E0E0E0; font-family:"Courier New",Courier,monospace; overflow: hidden; padding: 7px; margin-bottom: 20px; }
+
+</style>
