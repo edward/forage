@@ -2,13 +2,13 @@ class Forage.PlacesController extends Forage.ApplicationController
   routingKey: 'places'
 
   index: (params) ->
-    # @places = Forage.Place.get('all')
     @set('places', Forage.Place.get('all'))
 
   show: (params) ->
     @set 'place', Forage.Place.find params.id, ->
 
   edit: (params) ->
+    @set 'place', Forage.Place.find params.id, ->
 
   new: (params) ->
     @set('place', new Forage.Place)

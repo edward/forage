@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
   has_many :places
-  has_many :favorites
+
+  validate :name, :email, presence: true
 end

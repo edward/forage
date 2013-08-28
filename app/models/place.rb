@@ -1,6 +1,6 @@
 class Place < ActiveRecord::Base
-  belongs_to :author, class_name: 'User'
+  belongs_to :user
   has_many :favorites
 
-  # validate :user, presence: true
+  validate :name, :address, :user, presence: true
 end

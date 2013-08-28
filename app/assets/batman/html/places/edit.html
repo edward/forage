@@ -1,2 +1,6 @@
-<h1>PlacesController#edit</h1>
-<p>Find me in html/places/edit.html</p>
+<h1>Editing <span data-bind='place.name'></span></h1>
+
+<form data-event-submit='update'>
+  <div>Place name: <input data-bind='place.name'></input></div>  
+  <input type='submit' value='Update place suggestion'></input>
+</form>

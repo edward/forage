@@ -17,6 +17,9 @@ Batman.config.pathToHTML = '/assets/html'
 Batman.View::cache = false
 
 class Forage extends Batman.App
+
+  @resources 'users'
+
   @resources 'places'
   
   # @resources 'products'

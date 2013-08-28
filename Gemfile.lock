@@ -116,12 +116,12 @@ PLATFORMS
 
 DEPENDENCIES
   batman-rails
-  coffee-rails (~> 4.0.0)
+  coffee-rails (~> 4.0)
   debugger
   jbuilder (~> 1.2)
   jquery-rails
-  rails (= 4.0.0)
-  sass-rails (~> 4.0.0)
+  rails (~> 4.0)
+  sass-rails (~> 4.0)
   sdoc
   sqlite3
   uglifier (>= 1.3.0)

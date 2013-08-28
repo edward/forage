@@ -8,3 +8,4 @@ class Forage.Place extends Batman.Model
   @encode 'name', 'url', 'phone_number', 'address'
   @encodeTimestamps()
 
+  @belongsTo 'user'

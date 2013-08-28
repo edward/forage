@@ -1,8 +1,10 @@
 <h1 data-bind="place.name"></h1>
 
-<form data-event-submit='update'>
-  <div>Place name: <input data-bind='place.name'></input></div>  
-  <input type='submit' value='Update place suggestion'></input>
-</form>
+<p data-bind="place.address"></p>
+<p data-bind="place.phone_number"></p>
 
-<a data-route='routes.places'>Back to the list of places</a>
+<p>Added by <span data-bind="place.user.name"></span></p>
+
+<a data-route='routes.places[place].edit'>Edit this entry</a>
+
+<div data-partial="places/_back_to_list"></div>
