@@ -1,7 +1,9 @@
-<h1 data-bind="place.name"></h1>
+<div class="vcard">
+  <h1><a class="url" data-bind-href="place.url"><span class="fn" data-bind="place.name"></span></a></h1>
 
-<p data-bind="place.address"></p>
-<p data-bind="place.phone_number"></p>
+  <p class="adr" data-bind="place.address"></p>
+  <p class="tel" data-bind="place.phone_number"></p>
+</div>
 
 <p>Added by <span data-bind="place.user.name"></span></p>
 
