@@ -3,6 +3,8 @@ class Forage.PlacesController extends Forage.ApplicationController
 
   index: (params) ->
     @set('places', Forage.Place.get('all'))
+    @set('activities', Forage.Activity.get('all'))
+    # console.log @get('activities')
 
   show: (params) ->
     @set 'place', Forage.Place.find params.id, ->
