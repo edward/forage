@@ -29,7 +29,8 @@ Ottawa, ON, Canada", phone_number: "(613) 680-2949"},
   {name: "The Whalesbone", url: "http://www.thewhalesbone.com/", address: "430 Bank Street, Ottawa, Canada", phone_number: "(613) 231-8569"},
   {name: "107 Fourth Avenue Wine Bar", url: "http://107fourthavenue.com/", address: "107 Fourth Avenue, Ottawa, Canada", phone_number: "1-613-236-0040"},
   {name: "The Manx Pub", url: "http://manxpub.com/", address: "370 Elgin St, Ottawa ON, K2P 1N1, Canada", phone_number: "613-231-2070"},
-  {name: "Atelier", url: "http://www.atelierrestaurant.ca/", address: "540 ROCHESTER ST. OTTAWA, ONTARIO, Canada", phone_number: "613-321-3537"}
+  {name: "Atelier", url: "http://www.atelierrestaurant.ca/", address: "540 ROCHESTER ST. OTTAWA, ONTARIO, Canada", phone_number: "613-321-3537"},
+  {name: "Anna Thai", url: "http://www.urbanspoon.com/r/250/1450126/restaurant/Wellington-West/Anna-Fine-Thai-Cuisine-Ottawa", address: "91 Holland Avenue, Ottawa, Ontario, Canada", phone_number: "(613) 759 8472"}
 ]
 
 places.each do |place|
