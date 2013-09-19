@@ -5,7 +5,7 @@ class Place < ActiveRecord::Base
   acts_as_taggable_on :tags
 
   def as_json(options={})
-    super(options.merge(:include => [:tag_list]))
+    super(options.merge(:methods => [:tag_list]))
   end
 
   validate :name, :address, :user, presence: true
