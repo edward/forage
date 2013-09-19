@@ -10,7 +10,7 @@
 edward = User.create!(name: 'Edward', email: 'edward@shopify.com')
 
 places = [
-  {name: "Le Boulanger Francais", url: "http://www.bennysbistro.ca/bakery/", address: "119 Murray Street, Ottawa, Canada", phone_number: "613-789-7941"},
+  {name: "Le Boulanger Francais", url: "http://www.bennysbistro.ca/bakery/", address: "119 Murray Street, Ottawa, Canada", phone_number: "613-789-7941", walking_time_in_minutes: 10, tags: ["food", "french"]},
   {name: "Bread&Sons", url: "http://www.breadandsons.ca/", address: "195 Bank St. Ottawa, Canada", phone_number: "613-230-5302"},
   {name: "Hintonburger", url: "http://hintonburger.ca/", address: "1096 Wellington Street West, Ottawa, Canada", phone_number: "613-724-4676"},
   {name: "8 Locks’ Flat Canal Bisto", url: "http://8locksflat.com/", address: "Corktown Bridge, Ottawa, Canada"},
@@ -34,5 +34,9 @@ Ottawa, ON, Canada", phone_number: "(613) 680-2949"},
 ]
 
 places.each do |place|
-  edward.places.create!(place)
+  tags = place.delete(:tags)
+  place = Place.new(place)
+  place.tag_list.add(tags)
+  edward.places << place
+  edward.save
 end

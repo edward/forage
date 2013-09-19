@@ -5,6 +5,8 @@ class CreatePlaces < ActiveRecord::Migration
       t.string :url
       t.string :phone_number
       t.string :address
+      t.integer :walking_time_in_minutes
+
       t.references :user
 
       t.timestamps
