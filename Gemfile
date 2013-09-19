@@ -45,3 +45,5 @@ end
 gem 'debugger', group: [:development, :test]
 
 gem 'batman-rails'
+
+gem 'pg', group: [:production]
