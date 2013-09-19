@@ -9,7 +9,6 @@
 #= require_self
 
 #= require_tree ./lib
-#= require ./controllers/application_controller
 #= require_tree ./controllers
 #= require_tree ./models
 #= require_tree ./views
@@ -18,9 +17,10 @@ Batman.config.pathToHTML = '/assets/html'
 Batman.View::cache = false
 
 class Forage extends Batman.App
+
   @resources 'users'
+
   @resources 'places'
-  @resources 'activities'
   
   # @resources 'products'
   # @resources 'discounts', except: ['edit']

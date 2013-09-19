@@ -36,11 +36,3 @@ Ottawa, ON, Canada", phone_number: "(613) 680-2949"},
 places.each do |place|
   edward.places.create!(place)
 end
-
-activities = [
-  {name: "National Art Gallery", url: "http://gallery.ca", phone_number: "1-800-319-ARTS (2787)", address: "380 Sussex Drive, Ottawa, Ontario"}
-]
-
-activities.each do |activity|
-  edward.activities.create!(activity)
-end
