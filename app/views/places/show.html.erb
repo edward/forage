@@ -22,6 +22,10 @@
         <li>Tags: <%= @place.tag_list.to_sentence %></li>
       </ul>
 
+      <p>
+        <%= @place.description %>
+      </p>
+
       <%= link_to_directions_map(@place.address) do %>
         <img src="http://maps.googleapis.com/maps/api/staticmap?markers=size:mid%7Ccolor:yellow%7C<%= CGI.escape(@place.address) %>&markers=size:mid%7Ccolor:green%7Clabel:S%7C<%= CGI.escape(Place::SHOPIFY_OTTAWA_ADDRESS) %>&zoom=14&size=800x300&sensor=false&visual_refresh=true"></img>
       <% end -%>
