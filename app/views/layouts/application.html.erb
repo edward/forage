@@ -4,36 +4,39 @@
   <title>Forage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,400italic,700italic,900italic,900|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container" data-yield="main">
-    <div class="row">
+    <div id="header" class="row">
       <div class="span12">
-        <h1 id="app-logo">Forage</h1>
+        <div class="pull-right">
+          <% if current_user %>
+            <%= current_user.name %>
+            <%= link_to "Logout", logout_path, method: :delete %>
+          <% else %>
+            <%= link_to "Login as Shopify", login_path %>
+          <% end %>
+        </div>
+        <h1 id="app-logo" class="hide-text">Forage</h1>
         <h2 id="app-tagline">You'll never be lost again.</h2>
+      </div>
+
+      <div class="span6 offset3">
+        <nav class="filter-action">
+          <ul class="nav nav-pills">
+            <li class="nav-item active"><a href="">eat it</a></li>
+            <li class="nav-item"><a href="">drink it</a></li>
+            <li class="nav-item"><a href="">do it</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
 
-    <div class="row">
-      <div class="span12">
-        <ul class="nav nav-pills">
-          <li class="nav-item active"><a href="">Eat it</a></li>
-          <li class="nav-item"><a href="">Do it</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span12">
-        <% if current_user %>
-          <%= current_user.name %>
-          <%= link_to "Logout", logout_path, method: :delete %>
-        <% else %>
-          <%= link_to "Login as Shopify", login_path %>
-        <% end %>
-      </div>
-    </div>
     <%= yield %>
   </div>
 
