@@ -14,7 +14,7 @@
       </h3>
 
       <ul class="unstyled">
-        <li>Call this place: <a href="tel:<%= @place.phone_number %>"><%= @place.phone_number %></a></li>
+        <li>Call this place: <a href="tel:<%= @place.phone_number.gsub(/[()-]/, '') %>"><%= @place.phone_number %></a></li>
         <li><%= link_to_directions_map(@place.address) %></li>
         <% if @place.walking_time_in_minutes %>
         <li>About <%= @place.walking_time_in_minutes %> minutes walking from Shopify Ottawa.</li>
