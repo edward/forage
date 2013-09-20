@@ -17,21 +17,24 @@
 
 $color-green: #8A9B72;
 $color-red: #D84B41;
-$color-yellow: #ffc353;
+$color-yellow: #ffcb27;
 
 $serif: 'Lora', Helvetica, serif; 
 
-body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
+// body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
+
+body { background: #ffcb27; }
 
 h1 { color: #222; }
 h2 { color: #222; }
 
-
 .filter-action { font-family: $serif ; text-align: center;
-  .eatit { background: asset_url('eatit.png') 0 0 no-repeat; }
+  // .eat-it a { background: asset_url('eatit.png') 0 0 no-repeat; width: 125px; }
+  // .drink-it a { background: asset_url('drinkit.png') 0 0 no-repeat; width: 187px; }
+  // .do-it a { background: asset_url('doit.png') 0 0 no-repeat; width: 117px; }
   .nav-pills { display: inline-block; margin: 0 0 48px 0; }
   .nav-item {
-    a { background-color: #d94c3e; border: 4px #8a9b72 solid; color: #f9ebd5; font-size: 30px; line-height: 45px; border-radius: 3px;
+    a { background-color: #000; border: 4px #8a9b72 solid; color: #f9ebd5; font-size: 30px; line-height: 45px; border-radius: 3px;
       &:hover { background-color: #8a9b72; border: 4px #d94c3e solid; color: #d94c3e; }
     }
     @media screen and (max-width: 767px){ display: block; width: 100%; margin-bottom: 10px; }
@@ -40,20 +43,21 @@ h2 { color: #222; }
 .filter-dropdown {
   select { width: 100%; }
 }
-.filter-sidebar { padding: 24px; background: $color-green; margin-right: - 60px; margin-top: 20px; border: 4px solid $color-yellow;
+.filter-sidebar { padding: 24px; background: #000; margin-right: -60px;
   .nav-list { padding: 0; }
   .nav-list > li > ul > li > a { padding: 0 12px; color: #FFF; }
-  .nav-list li a { text-shadow: none; color: $color-yellow; }
+  .nav-list li a { text-shadow: none; color: #999; }
+  .nav-list > li > a, .nav-list .nav-header {margin-right: 15px;}
   
-  .nav-list li a:hover, .nav-list li a.active { color: $color-yellow; background: rgba(darken(#246627, 10%), .5) }
-  .nav-list li a:hover { background: rgba(darken(#246627, 10%), .25) }
+  .nav-list li a:hover, .nav-list li a.active { color: $color-yellow; background: #ffcb27; }
+  .nav-list li a:hover { background: #222; }
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
-  .nav-list li a.active { color: #FFF; }
+  .nav-list li a.active { color: #000; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
-  .nav-header { color: tint(#246627,40%); font-family: $serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid $color-yellow; margin: 0 0 12px 0; }
+  .nav-header { color: tint(#246627,40%); font-family: $serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid #222; margin: 0 0 12px 0; }
 }
 
-.content { background: shade(#8a9b72, 15%); padding: 30px; border: 8px solid #333;
+.content { background: #FFF; padding: 30px;
   ol { counter-reset: item; margin-top: -10px; padding: 0; margin: 0; }
   li { list-style: none; position: relative; padding: 20px 0 20px 40px; margin: 0 0 0 0; 
     
@@ -71,8 +75,8 @@ h2 { color: #222; }
       display: block;
       position: absolute;
       border-radius: 40px;
-      border: 4px solid #333;
-      background: #d8aa4c;
+      border: 4px solid #666;
+      background: #FFF;
       top: 6px;
       left: 0px;
       z-index: 89;
@@ -82,7 +86,7 @@ h2 { color: #222; }
       font-weight: bold;
     }
     &:hover:before {
-      background: #da4c3f;
+      background: #666;
       color: #FFF;
     }
     &:after {
@@ -90,7 +94,7 @@ h2 { color: #222; }
       width: 4px;
       display: block;
       position: absolute;
-      background: darken($color-yellow, 20%);
+      background: #eee;
       top: -1px;
       bottom: -1px;
       left: 22px;
@@ -102,12 +106,12 @@ h2 { color: #222; }
       padding: 0 0 0 30px;
     }
     &:hover {
-      background: tint($color-yellow, 15%);
+      // background: tint($color-yellow, 15%);
     }
   }
   .place-minutes {
     font-size: 14px;
-    color: darken($color-yellow, 20%);
+    color: #999;
   }
   .place-name a {
     font-size: 22px;
@@ -115,7 +119,10 @@ h2 { color: #222; }
     font-family: $serif;
   }
   .place-address {
-    color: darken($color-yellow, 20%);
+    color: #999;
+  }
+  .place-phone {
+    color: #666;
   }
 }
 
@@ -127,7 +134,7 @@ h2 { color: #222; }
 #logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; position: relative; 
   a { display: block; height: 71px; width: 371px; }
 } 
-#tagline { color: $color-yellow; font-family: $serif; font-size: 34px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
+#tagline { color: #000; font-family: $serif; font-size: 24px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
 
 #place-info {
   background-color: #fff; padding: 30px;
