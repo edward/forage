@@ -22,16 +22,16 @@
             <%= link_to "Login as Shopify", login_path %>
           <% end %>
         </div>
-        <h1 id="app-logo" class="hide-text">Forage</h1>
-        <h2 id="app-tagline">Never be lost again.</h2>
+        <h1 id="logo" class="hide-text"><i id="logo-compass"></i><%= link_to "Forage", places_path %></h1>
+        <h2 id="tagline">Never be lost again.</h2>
       </div>
 
-      <div class="span6 offset3">
+      <div class="span12">
         <nav class="filter-action">
           <ul class="nav nav-pills">
-          <li class="nav-item active"><%= link_to "Eat it", places_path(category: "eat it") %></li>
-          <li class="nav-item"><%= link_to "Drink it", places_path(category: "drink it") %></li>
-          <li class="nav-item"><%= link_to "Do it", places_path(category: "do it") %></li>
+            <%= nav_it_tag("eat it") %>
+            <%= nav_it_tag("drink it") %>
+            <%= nav_it_tag("do it") %>
           </ul>
         </nav>
       </div>
