@@ -15,20 +15,24 @@
 @import "bootstrap.min";
 @import "bootstrap-responsive.min";
 
+$color-green: #8A9B72;
+$color-red: #D84B41;
+$color-yellow: #ffc353;
+
+$serif: 'Lora', Helvetica, serif; 
+
 body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
 
 h1 { color: #222; }
 h2 { color: #222; }
 
 
-.filter-action { font-family: 'Merriweather', serif; font-weight: 400; text-align: center;
-  .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus { background-color: #d8aa4c; color: #3b803f; }
+.filter-action { font-family: $serif ; text-align: center;
+  .eatit { background: asset_url('eatit.png') 0 0 no-repeat; }
   .nav-pills { display: inline-block; margin: 0 0 48px 0; }
-  .nav-item { background-color: rgba(#3b803f, 0.50); border: 4px #d8aa4c solid; font-size: 30px; float: left; margin: 0 10px; border-radius: 5px; display: inline;
-    &.active { background-color: #d8aa4c; color: #3b803f; }
-    &:hover { background-color: #d8aa4c; color: #3b803f; }
-    a { text-align: center; color: #d8aa4c; text-transform: uppercase; font-weight: bold; line-height: 48px;
-      &:hover { background-color: #d8aa4c; color: #3b803f; }
+  .nav-item {
+    a { background-color: #d94c3e; border: 4px #8a9b72 solid; color: #f9ebd5; font-size: 30px; line-height: 45px; border-radius: 3px;
+      &:hover { background-color: #8a9b72; border: 4px #d94c3e solid; color: #d94c3e; }
     }
     @media screen and (max-width: 767px){ display: block; width: 100%; margin-bottom: 10px; }
   }
@@ -36,20 +40,20 @@ h2 { color: #222; }
 .filter-dropdown {
   select { width: 100%; }
 }
-.filter-sidebar { padding: 24px; background: rgba(#246627,0.7); margin-right: - 60px; margin-top: 20px; border: 4px solid #d8aa4c;
+.filter-sidebar { padding: 24px; background: $color-green; margin-right: - 60px; margin-top: 20px; border: 4px solid $color-yellow;
   .nav-list { padding: 0; }
   .nav-list > li > ul > li > a { padding: 0 12px; color: #FFF; }
-  .nav-list li a { text-shadow: none; color: #d8aa4c; }
+  .nav-list li a { text-shadow: none; color: $color-yellow; }
   
-  .nav-list li a:hover, .nav-list li a.active { color: #d8aa4c; background: rgba(darken(#246627, 10%), .5) }
+  .nav-list li a:hover, .nav-list li a.active { color: $color-yellow; background: rgba(darken(#246627, 10%), .5) }
   .nav-list li a:hover { background: rgba(darken(#246627, 10%), .25) }
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
   .nav-list li a.active { color: #FFF; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
-  .nav-header { color: tint(#246627,40%); font-family: 'Merriweather', serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid #d8aa4c; margin: 0 0 12px 0; }
+  .nav-header { color: tint(#246627,40%); font-family: $serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid $color-yellow; margin: 0 0 12px 0; }
 }
 
-.content { background-color: #d8aa4c; padding: 30px; border: 8px solid #333;
+.content { background: shade(#8a9b72, 15%); padding: 30px; border: 8px solid #333;
   ol { counter-reset: item; margin-top: -10px; padding: 0; margin: 0; }
   li { list-style: none; position: relative; padding: 20px 0 20px 40px; margin: 0 0 0 0; 
     
@@ -86,7 +90,7 @@ h2 { color: #222; }
       width: 4px;
       display: block;
       position: absolute;
-      background: darken(#d8aa4c, 20%);
+      background: darken($color-yellow, 20%);
       top: -1px;
       bottom: -1px;
       left: 22px;
@@ -98,20 +102,20 @@ h2 { color: #222; }
       padding: 0 0 0 30px;
     }
     &:hover {
-      background: tint(#d8aa4c, 15%);
+      background: tint($color-yellow, 15%);
     }
   }
   .place-minutes {
     font-size: 14px;
-    color: darken(#d8aa4c, 20%);
+    color: darken($color-yellow, 20%);
   }
   .place-name a {
     font-size: 22px;
     color: #333;
-    font-family: 'Merriweather', serif;
+    font-family: $serif;
   }
   .place-address {
-    color: darken(#d8aa4c, 20%);
+    color: darken($color-yellow, 20%);
   }
 }
 
@@ -123,7 +127,7 @@ h2 { color: #222; }
 #logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; position: relative; 
   a { display: block; height: 71px; width: 371px; }
 } 
-#tagline { color: #d8aa4c; font-family: 'Merriweather', serif; font-size: 26px; font-weight: 400; text-align: center; margin-bottom: 48px; }
+#tagline { color: $color-yellow; font-family: $serif; font-size: 34px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
 
 #place-info {
   background-color: #fff; padding: 30px;
