@@ -8,6 +8,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 drink_it = [
+  {name: "The Albion Rooms", 
+     url: "http://thealbionrooms.com/index.php/our-vision/",
+     address: "33 Nicholas Street, Ottawa, ON, K1N9M7",
+     phone_number: "613-760-4771",
+     walking_time_in_minutes: 7,
+     tags: ["Eat it", "Bar", "Restaurant"],
+     tagline: "Their constitution: Food, drink and good company."},
+
   {name: "Barrymore's Music Hall", 
    url: "http://www.barrymores.on.ca/",
    address: "323 Bank Street, Ottawa, ON, K2P 1X9",
