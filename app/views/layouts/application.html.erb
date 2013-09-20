@@ -22,11 +22,11 @@
             <%= link_to "Login as Shopify", login_path %>
           <% end %>
         </div>
-        <h1 id="app-logo" class="hide-text">Forage</h1>
+        <h1 id="app-logo" class="hide-text"><a href="">Forage</a></h1>
         <h2 id="app-tagline">Never be lost again.</h2>
       </div>
 
-      <div class="span6 offset3">
+      <div class="span12">
         <nav class="filter-action">
           <ul class="nav nav-pills">
           <li class="nav-item active"><%= link_to "Eat it", places_path(tag: params[:tag], distance: params[:distance], category: "eat it") %></li>
