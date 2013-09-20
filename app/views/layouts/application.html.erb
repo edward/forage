@@ -29,9 +29,9 @@
       <div class="span6 offset3">
         <nav class="filter-action">
           <ul class="nav nav-pills">
-          <li class="nav-item active"><%= link_to "Eat it", places_path(tag: params[:tag], distance: params[:distance], category: "eat it") %></li>
-          <li class="nav-item"><%= link_to "Drink it", places_path(tag: params[:tag], distance: params[:distance], category: "drink it") %></li>
-          <li class="nav-item"><%= link_to "Do it", places_path(tag: params[:tag], distance: params[:distance], category: "do it") %></li>
+            <%= nav_it_tag("eat it") %>
+            <%= nav_it_tag("drink it") %>
+            <%= nav_it_tag("do it") %>
           </ul>
         </nav>
       </div>
