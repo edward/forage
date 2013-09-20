@@ -30,6 +30,12 @@ a { color: #da4c3f; text-transform: uppercase;
   &:hover { color: #000; }
 }
 
+.login-link { 
+  a { border: 2px #000 solid; border-radius: 3px; color: #000; display: block; padding: 8px; margin-top: 30px; 
+    &:hover { background-color: #000; color: #fff; border: 2px transparent solid; text-decoration: none; }
+  }
+}
+
 .filter-action { text-align: center; text-transform: uppercase;
   .nav-pills { display: inline-block; margin: 0 0 48px 0; }
   .nav-item {
@@ -50,7 +56,7 @@ a { color: #da4c3f; text-transform: uppercase;
   
 
   .nav-list li a:hover, .nav-list li a.active { background: #da4c3f; color: #fff; }
-  .nav-list li a:hover { background: #5097b6; }
+  .nav-list li a:hover { background: #da4c3f; }
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
   .nav-header { color: tint(#246627,40%); font-size: 16px; text-transform: none; border-bottom: 2px solid $color-yellow; margin: 0 0 12px 0; }
@@ -126,6 +132,7 @@ a { color: #da4c3f; text-transform: uppercase;
 }
 
 #header { padding-top: 60px; }
+
 #logo-compass { background: asset_url('logo-compass.png') 0 0 no-repeat; width: 71px; height: 69px; display: block; position: absolute; left:45px;  @include transition-duration(0.8s); @include transition-property (transform); overflow:hidden;
     &:hover, &.hovered { @include transform(rotate(360deg)); }
 }

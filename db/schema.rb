@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130920015353) do
+ActiveRecord::Schema.define(version: 20130920185641) do
 
   create_table "places", force: true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20130920015353) do
     t.integer  "walking_time_in_minutes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "price_range"
   end
 
   create_table "taggings", force: true do |t|
