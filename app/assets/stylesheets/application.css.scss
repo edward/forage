@@ -56,6 +56,20 @@ a { color: #000; }
 
 #content-eat { background-color: #fff; padding: 30px; }
 
+#content-eat li {
+  padding-bottom: 20px;
+}
+
+#content-eat span {
+  color: #999;
+}
+
+#content-eat a {
+  font-size: 24px;
+  color: #da4c3f;
+  display: block;
+}
+
 #place-info {
   background-color: #fff; padding: 30px;
 }
