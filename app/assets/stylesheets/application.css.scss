@@ -21,8 +21,6 @@ $color-yellow: #ffcb27;
 
 $sans: 'Sintony', sans-serif;
 
-// body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
-
 body { background: #ffcb27; font-family: $sans; }
 
 h1 { color: #222; }
@@ -52,7 +50,7 @@ a { color: #da4c3f; text-transform: uppercase;
   .nav-list > li > a, .nav-list .nav-header {margin-right: 15px;}
   
 
-  .nav-list li a:hover, .nav-list li a.active { background: #5097b6; color: #fff; }
+  .nav-list li a:hover, .nav-list li a.active { background: #da4c3f; color: #fff; }
   .nav-list li a:hover { background: #5097b6; }
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
