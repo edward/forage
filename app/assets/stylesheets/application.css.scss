@@ -31,29 +31,33 @@ a { color: #da4c3f; text-transform: uppercase;
 }
 
 .login-link { 
-  a { border: 2px #000 solid; border-radius: 3px; color: #000; display: block; padding: 8px; margin-top: 30px; 
+  a { border: 2px #000 solid; color: #000; display: block; padding: 8px; margin-top: 30px; 
     &:hover { background-color: #000; color: #fff; border: 2px transparent solid; text-decoration: none; }
   }
+}
+
+.forage-trail { position: absolute; z-index: -99; left: 520px; 
+  @media (max-width: 1470px) { display: none !important; }
+
 }
 
 .filter-action { text-align: center; text-transform: uppercase;
   .nav-pills { display: inline-block; margin: 0 0 48px 0; }
   .nav-item {
-    a { background-color: #ffcb27; border: 4px #000 solid; color: #000; font-family: $sans; font-size: 30px; line-height: 45px; border-radius: 3px; padding: 10px 50px; 
+    a { background-color: #ffcb27; border: 4px #000 solid; color: #000; font-family: $sans; font-size: 30px; line-height: 45px; border-radius: 0px; padding: 10px 50px; margin-right: 15px; 
       &:hover { background-color: #000; border: 4px transparent solid; color: #f9ebd5; }
     }
-    &.active a { background-color: #000; border: 4px transparent solid; color: #f9ebd5; }
+    &.active a { background-color: #000; color: #FFF; }
     @media screen and (max-width: 767px){ display: block; width: 100%; margin-bottom: 10px; }
   }
 }
 .filter-dropdown {
   select { width: 100%; }
 }
-.filter-sidebar { padding: 24px; background: #000; margin-right: -60px;
+.filter-sidebar { padding: 24px; background: #000;
   .nav-list { padding: 0; }
   .nav-list > li > ul > li > a { padding: 0 12px; color: #FFF; }
   .nav-list li a { text-shadow: none; color: #999; }
-  .nav-list > li > a, .nav-list .nav-header {margin-right: 15px;}
   
 
   .nav-list li a:hover, .nav-list li a.active { background: #da4c3f; color: #fff; }
@@ -132,13 +136,17 @@ a { color: #da4c3f; text-transform: uppercase;
   }
 }
 
-#logo-compass { background: asset_url('logo-compass.png') 0 0 no-repeat; width: 71px; height: 69px; display: block; position: absolute; left:45px;  @include transition-duration(0.8s); @include transition-property (transform); overflow:hidden;
+#header { 
+  @media (max-width: 767px) { margin-top: 100px; }
+}
+
+#logo-compass { background: asset_url('logo-compass.png') 0 0 no-repeat; width: 72px; height: 69px; display: block; position: absolute; left:45px;  @include transition-duration(0.8s); @include transition-property (transform); overflow:hidden;
     &:hover, &.hovered { @include transform(rotate(360deg)); }
 }
-#logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; position: relative; 
+#logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 72px; margin: 0 auto; position: relative; 
   a { display: block; height: 71px; width: 371px; }
 } 
-#tagline { color: #000; font-family: 'Lora', serif; ; font-size: 34px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
+#tagline { color: #000; font-family: 'Lora', serif; ; font-size: 24px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
 
 #place-info {
   background-color: #fff; padding: 30px;
