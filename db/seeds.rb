@@ -13,7 +13,7 @@ places = [
    address: "119 Murray Street, Ottawa, Canada", 
    phone_number: "613-789-7941", 
    walking_time_in_minutes: 10, 
-   tags: ["eat it", "food", "french"]},
+   tags: ["eat it", "french"]},
 
   {name: "Bread&Sons", 
    url: "http://www.breadandsons.ca/",
