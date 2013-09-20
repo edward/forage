@@ -3,19 +3,25 @@
 <div class="row">
   <%= render partial: "filter_desktop" %>
 
-  <div class="span8">
-    <div id="content-eat">
-      <ol>
+  <div class="span9">
+    <div id="content-eat" class="content">
+      <ol tint>
       <% @places.each do |place| %>
         <li>
-          <p>
-            <span>
-            <%= link_to place.name, place %> 
+          <div>
+            <span class="place-name"><%= link_to place.name, place %></span>
             <% if place.walking_time_in_minutes %>
-              <%= place.walking_time_in_minutes %> minutes away
+              <span class="place-minutes pull-right"><%= place.walking_time_in_minutes %> minutes away</span>
             <% end %>
-            </span>
-          </p>
+          </div>
+          <div>
+            <% if place.phone_number %>
+              <span class="place-phone"><%= place.phone_number %></span>
+            <% end %>
+            <% if place.address %>
+              <span class="place-address"><%= place.address %></span>
+            <% end %>
+          </div>
         </li>
       <% end %>
       </ol>
