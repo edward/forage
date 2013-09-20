@@ -9,28 +9,13 @@
       </ul>
       <li class="nav-header">Filter by taste</li>
       <ul class="nav nav-list">
-        <li><a href="">Bakery</a></li>
-        <li><a href="">Breakfast</a></li>
-        <li><a href="">Chinese</a></li>
-        <li><a href="">Coffee and Tea</a></li>
-        <li><a href="">Desserts</a></li>
-        <li><a href="">Diner</a></li>
-        <li><a href="">Greek</a></li>
-        <li><a href="">Indian</a></li>
-        <li><a href="">Italian</a></li>
-        <li><a href="">Japanese</a></li>
-        <li><a href="">Korean</a></li>
-        <li><a href="">Mexican</a></li>
-        <li><a href="">Pizza</a></li>
-        <li><a href="">Pub</a></li>
-        <li><a href="">Sandwiches</a></li>
-        <li><a href="">Southern</a></li>
-        <li><a href="">Tacos</a></li>
-        <li><a href="">Tapas</a></li>
-        <li><a href="">Thai</a></li>
-        <li><a href="">Vegan</a></li>
-        <li><a href="">Vegetarian</a></li>
-        <li><a href="">Vietnamese</a></li>
+        <% tag_cloud(@tags, []) do |tag, css_class| %>
+          <li>
+            <% unless Place::RESERVED_TAGS.include?(tag.name) %>
+              <%= link_to tag.name.humanize, places_path(tag: tag.name) %>
+            <% end %>
+          </li>
+        <% end %>
       </ul>
     </ul>
   </nav>

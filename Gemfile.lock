@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/kevinmcphillips/Code/Ruby/google_auth
+GIT
+  remote: git://github.com/Shopify/google_auth.git
+  revision: 555303d941a5128dbf5a15d06d13b95b76c5dd81
+  ref: 555303d941a5128dbf5a15d06d13b95b76c5dd81
   specs:
     google_auth (0.0.4)
       omniauth-google-apps
