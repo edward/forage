@@ -14,11 +14,17 @@
       </h3>
 
       <ul class="unstyled">
-        <li><%= @place.phone_number %></li>
-        <li><%= @place.address %></li>
-        <li><%= @place.walking_time_in_minutes %></li>
-        <li><%= @place.tag_list %></li>
+        <li>Call this place: <%= @place.phone_number %></li>
+        <li><%= link_to_directions_map(@place.address) %></li>
+        <% if @place.walking_time_in_minutes %>
+        <li>About <%= @place.walking_time_in_minutes %> minutes walking from Shopify Ottawa.</li>
+        <% end -%>
+        <li>Tags: <%= @place.tag_list.to_sentence %></li>
       </ul>
+
+      <%= link_to_directions_map(@place.address) do %>
+        <img src="http://maps.googleapis.com/maps/api/staticmap?markers=size:mid%7Ccolor:yellow%7C<%= CGI.escape(@place.address) %>&markers=size:mid%7Ccolor:green%7Clabel:S%7C<%= CGI.escape(Place::SHOPIFY_OTTAWA_ADDRESS) %>&zoom=14&size=400x400&sensor=false&visual_refresh=true"></img>
+      <% end -%>
     </div>
   </div>
 </div>
