@@ -9,14 +9,7 @@
       </ul>
       <li class="nav-header">Filter by taste</li>
       <ul class="nav nav-list">
-        <li><%= link_to "All", places_path(distance: params[:distance], category: params[:category]) %></li>
-        <% tag_cloud(@tags, []) do |tag, css_class| %>
-          <li>
-            <% unless Place::RESERVED_TAGS.include?(tag.name) %>
-              <%= link_to tag.name.humanize, places_path(tag: tag.name, distance: params[:distance], category: params[:category]) %>
-            <% end %>
-          </li>
-        <% end %>
+        <%= tag_cloud_list @tags %>
       </ul>
     </ul>
   </nav>
