@@ -1,28 +1,17 @@
-== README
+# Forage
+## Never be lost again
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Forage is the result of [Serena Ngai](http://github.com/serenangai) and [Edward Ocampo-Gooding](http://github.com/edward) being asked “ohai, I’m looking for a place to (eat|drink|have fun) near the office – know anywhere?”
 
-Things you may want to cover:
+Mega awesome contributing authors include: [Ian Mortier](http://github.com/healthcare) (design!), Kevin Mcphillips (code!), Chris Lobay (design!), Brittany Forsyth (places!), Courtney Symons (places!), Lisa Danay (places!), and everyone else who we collaboratively roped in to help out (love!).
 
-* Ruby version
+Forage is copyright Shopify Inc. 2013 and was produced during our September Hackdays.
 
-* System dependencies
+## Future Features
 
-* Configuration
+* Speeeeeed – this thing feels pretty slow; moar caching and possibly using a redis back for the tags could help, but we haven’t really started looking at where the slow parts are
+* Easier contributions of places + curating those suggestions
+* Fave stars for places + feedback to those who suggested the place that got the fave
 
-* Database creation
+https://github.com/edward/forage/graphs/contributors
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
