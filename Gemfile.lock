@@ -75,6 +75,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.0)
+    newrelic_rpm (3.6.7.152)
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
@@ -179,6 +180,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   google_auth!
   jquery-rails
+  newrelic_rpm
   pg
   pry-debugger
   pry-rails
