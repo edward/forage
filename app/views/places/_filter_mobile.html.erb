@@ -4,8 +4,7 @@
       <select id="distance">
         <option value="walking" <%= 'selected="selected"' if params["distance"] == "walking" %>>Within walking distance</option>
         <option value="taxi" <%= 'selected="selected"' if params["distance"] == "taxi" %>>Within taxi distance</option>
-        <option value="all" <%= 'selected="selected"' if (params["distance"] == "all" || params["distance"].blank?) %>>Show any distance</option>
-        (Distances are from Shopify Ottawa)
+        <option value="all" <%= 'selected="selected"' if (params["distance"] == "all" || params["distance"].blank?) %>>Any distance from Shopify</option>
       </select>
     </nav>
   </div>
