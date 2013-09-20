@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Forage::Application.config.secret_key_base = 'cf927834ed80d3137d1804a5e3f51e32f32d4d0bd320cd1fbf30b8c605312a5ca45a6a01e0c1817780fef4d83ec62862da49a1e527a4644ac309e7fb66854e72'
+Forage::Application.config.secret_key_base = '0874d68bd3608a3bdb7993e545022bdf9230af8a8eb7438845e48c01f99f064a112ed0c203fc36435eb93d047765e3d83eda9bfde4d9e91e66c27b3105ba2f1c'
