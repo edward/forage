@@ -11,6 +11,7 @@ class PlacesController < ApplicationController
   end
 
   def show
+    @tags = @place.tag_counts_on(:tags)
   end
 
   def new
