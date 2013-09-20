@@ -15,14 +15,12 @@
 @import "bootstrap.min";
 @import "bootstrap-responsive.min";
 
-body { background-color: #fff; }
+body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
 
 h1 { color: #222; }
 h2 { color: #222; }
 
 a { color: #000; }
-
-.container { padding-top: 60px; }
 
 .filter-sidebar { background-color: #2d2a28; 
 	a { color: #fff; }
@@ -30,4 +28,17 @@ a { color: #000; }
 	.nav-header { color: #fff; }
 
 }
-.content { background-color: #ddd; padding-top: 20px; }
+.filter-action { font-family: 'Merriweather', serif; font-weight: 400;
+  .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus { background-color: #d8aa4c; }
+  .nav-item { background-color: #3b803f; border: 1px #d8aa4c solid; font-size: 36px; float: left; margin: 0 10px; border-radius: 4px; 
+    a { color: #d8aa4c; padding: 20px 25px; }
+    &:hover { }
+    &.active { background-color: #d8aa4c; 
+      a { color: #3b803f; }
+    }
+  }
+}
+
+#header { padding-top: 60px; }
+#app-logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; } 
+#app-tagline { color: #d8aa4c; font-family: 'Merriweather', serif; font-size: 24px; font-weight: 400; text-align: center; }
