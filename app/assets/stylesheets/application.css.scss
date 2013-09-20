@@ -9,5 +9,25 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
+
+@import "bourbon";
+@import "bootstrap.min";
+@import "bootstrap-responsive.min";
+
+body { background-color: #fff; }
+
+h1 { color: #222; }
+h2 { color: #222; }
+
+a { color: #000; }
+
+.container { padding-top: 60px; }
+
+.filter-sidebar { background-color: #2d2a28; 
+	a { color: #fff; }
+	.nav-list > li > a, .nav-list .nav-header { text-shadow: none; }
+	.nav-header { color: #fff; }
+
+}
+.content { background-color: #ddd; padding-top: 20px; }

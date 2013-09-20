@@ -2,13 +2,30 @@
 <html>
 <head>
   <title>Forage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container" data-yield="main">
+    <div class="row">
+      <div class="span12">
+        <h1 id="app-logo">Forage</h1>
+        <h2 id="app-tagline">You'll never be lost again.</h2>
+      </div>
+    </div>
 
-<%= yield %>
+    <div class="row">
+      <div class="span12">
+        <ul class="nav nav-pills">
+          <li class="nav-item active"><a href="">Eat it</a></li>
+          <li class="nav-item"><a href="">Do it</a></li>
+        </ul>
+      </div>
+    </div>
+    <%= yield %>
+  </div>
 
 </body>
 </html>
