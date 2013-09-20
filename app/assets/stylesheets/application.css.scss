@@ -21,7 +21,7 @@ $color-yellow: #ffcb27;
 
 $sans: 'Sintony', sans-serif;
 
-body { background: #ffcb27; font-family: $sans; }
+body { background: asset_url('background.png') #ffcb27; font-family: $sans; }
 
 h1 { color: #222; }
 h2 { color: #222; }
@@ -36,8 +36,8 @@ a { color: #da4c3f; text-transform: uppercase;
   }
 }
 
-.forage-trail { position: absolute; z-index: -99; left: 520px; 
-  @media (max-width: 1470px) { display: none !important; }
+.forage-trail { display: none; position: absolute; z-index: -99; margin-left: 300px; 
+  // @media (max-width: 1470px) { display: none !important; }
 
 }
 
@@ -61,7 +61,10 @@ a { color: #da4c3f; text-transform: uppercase;
   
 
   .nav-list li a:hover, .nav-list li a.active { background: #da4c3f; color: #fff; }
-  .nav-list li a:hover { background: #da4c3f; }
+  .nav-list li a:hover { background: #222; }
+  
+  .nav-list li a.active:hover { background: #da4c3f;}
+  
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
   .nav-header { color: tint(#246627,40%); font-size: 16px; text-transform: none; border-bottom: 2px solid $color-yellow; margin: 0 0 12px 0; }
