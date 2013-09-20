@@ -16,7 +16,7 @@
     <nav class="filter-dropdown">
       <select id="tag">
         <option value="">Filter by taste</option>
-        <% @tags.each do |tag| %>
+        <% @tags.reject {|tag| Place::RESERVED_TAGS.include?(tag.name) }.each do |tag| %>
           <option value="<%= tag.name %>" <%= 'selected="selected"' if params["tag"] == tag.name %>><%= tag.name.capitalize %></option>  
         <% end %>
       </select>
