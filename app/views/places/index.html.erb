@@ -9,10 +9,12 @@
       <% @places.each do |place| %>
         <li>
           <p>
+            <span>
             <%= link_to place.name, place %> 
             <% if place.walking_time_in_minutes %>
-              – walking time: <%= place.walking_time_in_minutes %> minutes
+              <%= place.walking_time_in_minutes %> minutes away
             <% end %>
+            </span>
           </p>
         </li>
       <% end %>
