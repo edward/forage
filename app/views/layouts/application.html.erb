@@ -4,22 +4,28 @@
   <title>Forage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <link href='http://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,300italic|Sintony' rel='stylesheet' type='text/css'>
+
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container" data-yield="main">
+
+    <div class="login-link pull-right">
+      <% if current_user %>
+        <%= current_user.name %>
+        <%= link_to "Logout", logout_path, method: :delete %>
+      <% else %>
+        <%= link_to "Login as Shopify", login_path %>
+      <% end %>
+    </div>
+
     <div id="header" class="row">
       <div class="span12">
-        <div class="pull-right">
-          <% if current_user %>
-            <%= current_user.name %>
-            <%= link_to "Logout", logout_path, method: :delete %>
-          <% else %>
-            <%= link_to "Login as Shopify", login_path %>
-          <% end %>
-        </div>
         <h1 id="logo" class="hide-text"><i id="logo-compass"></i><%= link_to "Forage", places_path %></h1>
         <h2 id="tagline">Never be lost again.</h2>
       </div>
