@@ -24,6 +24,16 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="span12">
+        <% if current_user %>
+          <%= current_user.name %>
+          <%= link_to "Logout", logout_path, method: :delete %>
+        <% else %>
+          <%= link_to "Login as Shopify", login_path %>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
   </div>
 
