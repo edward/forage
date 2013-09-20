@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
 
   def index
     @places = Place.all
-    @places = @places.tagged_with(params[:tag]) if params[:tag]
+    @places = @places.tagged_with([params[:tag], params[:category]]) if params[:tag].present? || params[:category].present?
 
     @tags = Place.tag_counts_on(:tags)
   end
