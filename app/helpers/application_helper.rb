@@ -2,7 +2,7 @@ module ApplicationHelper
 
   def nav_it_tag(category)
     content_tag :li, class: "nav-item #{category.gsub(' ', '-')} #{ params[:category] == category ? 'active' : '' }" do
-      link_to(category.humanize, places_path(tag: params[:tag], distance: params[:distance], category: category))
+      link_to(category.humanize, places_path(tag: params[:tag], distance: params[:distance], category: category), { :class=>"hide-text" })
     end
   end
 

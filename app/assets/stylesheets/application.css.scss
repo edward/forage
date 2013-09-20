@@ -26,9 +26,10 @@ body { background: asset_url('bg.png') #3b803f 0 0 repeat;  }
 h1 { color: #222; }
 h2 { color: #222; }
 
-
 .filter-action { font-family: $serif ; text-align: center;
-  .eatit { background: asset_url('eatit.png') 0 0 no-repeat; }
+  .eat-it a { background: asset_url('eatit.png') 0 0 no-repeat; width: 125px; }
+  .drink-it a { background: asset_url('drinkit.png') 0 0 no-repeat; width: 187px; }
+  .do-it a { background: asset_url('doit.png') 0 0 no-repeat; width: 117px; }
   .nav-pills { display: inline-block; margin: 0 0 48px 0; }
   .nav-item {
     a { background-color: #d94c3e; border: 4px #8a9b72 solid; color: #f9ebd5; font-size: 30px; line-height: 45px; border-radius: 3px;

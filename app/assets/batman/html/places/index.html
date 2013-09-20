@@ -1,0 +1,140 @@
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<h1>Forage</h1>
+			<h2>You'll never be lost again.</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<ul class="nav">
+			<li class="tab active"><a href="">What to eat</a></li>
+			<li class="tab"><a href="">Things to do</a></li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<div class="span12 hidden-desktop">
+			<nav class="filter-dropdown">
+				<select>
+					<option value="" selected="selected">Filter by distance</option>
+					<option value="">Show any distance</option>
+					<option value="">Taxi</option>
+					<option value="">Walk</option>
+				</select>
+			</nav>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span12 hidden-desktop">
+			<nav class="filter-dropdown">
+				<select>
+					<option value="" selected="selected">Filter by taste</option>
+					<option value="">Bakery</option>
+					<option value="">Breakfast</option>
+					<option value="">Chinese</option>
+					<option value="">Coffee and Tea</option>
+					<option value="">Desserts</option>
+					<option value="">Diner</option>
+					<option value="">Greek</option>
+					<option value="">Indian</option>
+					<option value="">Italian</option>
+					<option value="">Japanese</option>
+					<option value="">Korean</option>
+					<option value="">Mexican</option>
+					<option value="">Pizza</option>
+					<option value="">Pub</option>
+					<option value="">Sandwiches</option>
+					<option value="">Southern</option>
+					<option value="">Tacos</option>
+					<option value="">Tapas</option>
+					<option value="">Thai</option>
+					<option value="">Vegan</option>
+					<option value="">Vegetarian</option>
+					<option value="">Vietnamese</option>
+				</select>
+			</nav>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="span3 visible-desktop">
+			<nav class="filter-sidebar">
+				<ul class="nav nav-list"> 
+					<li class="nav-header">Distance from Shopify</li>
+					<ul class="nav nav-list">
+						<li><a href="">All</a></li>
+						<li><a href="">Walking distance</a></li>
+						<li><a href="">Taxi ride</a></li>
+					</ul>
+					<li class="nav-header">Filter by taste</li>
+					<ul class="nav nav-list">
+						<li><a href="">Bakery</a></li>
+						<li><a href="">Breakfast</a></li>
+						<li><a href="">Chinese</a></li>
+						<li><a href="">Coffee and Tea</a></li>
+						<li><a href="">Desserts</a></li>
+						<li><a href="">Diner</a></li>
+						<li><a href="">Greek</a></li>
+						<li><a href="">Indian</a></li>
+						<li><a href="">Italian</a></li>
+						<li><a href="">Japanese</a></li>
+						<li><a href="">Korean</a></li>
+						<li><a href="">Mexican</a></li>
+						<li><a href="">Pizza</a></li>
+						<li><a href="">Pub</a></li>
+						<li><a href="">Sandwiches</a></li>
+						<li><a href="">Southern</a></li>
+						<li><a href="">Tacos</a></li>
+						<li><a href="">Tapas</a></li>
+						<li><a href="">Thai</a></li>
+						<li><a href="">Vegan</a></li>
+						<li><a href="">Vegetarian</a></li>
+						<li><a href="">Vietnamese</a></li>
+					</ul>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="span8">
+			<div class="content">
+				<div id="content-eat">
+					<ol class="span8">
+						<li data-foreach-place="places">
+						  <a data-route='place' data-bind='place.name'></a>
+						</li>
+					</ol>
+
+					<!-- <div data-showif='noPlaces'> -->
+					<a data-route='routes.places.new'>Suggest a restaurant</a>
+					<!-- </div> -->
+				</div>
+				<!-- end: content-eat -->
+
+
+				<div id="content-do"> 
+					<ol>
+						<li></li>
+					</ol>
+
+					<div data-foreach-activity="activities">
+					  <p><a data-route='activity' data-bind='activity.name'></a></p>
+					</div>
+
+					<hr />
+
+					<div data-foreach-place="places">
+					  <p><a data-route='place' data-bind='place.name'></a></p>
+					</div>
+
+
+				</div>
+				<!-- end: content-do -->
+			</div>
+
+		</div>
+	</div>
+
+</div>
