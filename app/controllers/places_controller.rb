@@ -7,7 +7,7 @@ class PlacesController < ApplicationController
     @places = @places.walking_distance if params[:distance] == "walking"
     @places = @places.taxi_distance if params[:distance] == "taxi"
 
-    @tags = Place.tag_counts_on(:tags)
+    @tags = Place.tagged_with([params[:tag], params[:category]]).tag_counts_on(:tags)
   end
 
   def show
