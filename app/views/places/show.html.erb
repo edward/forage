@@ -1,34 +1,24 @@
-<p id="notice"><%= notice %></p>
+<%= render partial: "filter_mobile" %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @place.name %>
-</p>
+<div class="row">
+  <%= render partial: "filter_desktop" %>
 
-<p>
-  <strong>Url:</strong>
-  <%= @place.url %>
-</p>
+  <div class="span8">
+    <div id="place-info">
+      <div class="pull-right">
+        <%= link_to 'Back', places_path %>
+      </div>
 
-<p>
-  <strong>Phone number:</strong>
-  <%= @place.phone_number %>
-</p>
+      <h3 id="place-name">
+        <%= link_to @place.name, @place.url %>
+      </h3>
 
-<p>
-  <strong>Address:</strong>
-  <%= @place.address %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @place.description %>
-</p>
-
-<p>
-  <strong>Walking time in minutes:</strong>
-  <%= @place.walking_time_in_minutes %>
-</p>
-
-<%= link_to 'Edit', edit_place_path(@place) %> |
-<%= link_to 'Back', places_path %>
+      <ul class="unstyled">
+        <li><%= @place.phone_number %></li>
+        <li><%= @place.address %></li>
+        <li><%= @place.walking_time_in_minutes %></li>
+        <li><%= @place.tag_list %></li>
+      </ul>
+    </div>
+  </div>
+</div>
