@@ -45,24 +45,8 @@ a { color: #000; }
 }
 
 #header { padding-top: 60px; }
-#logo-compass { background: asset_url('logo-compass.png') 0 0 no-repeat; width: 71px; height: 69px; display: block; position: absolute; left:45px; 
-  -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
-
-    &:hover {
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    }
+#logo-compass { background: asset_url('logo-compass.png') 0 0 no-repeat; width: 71px; height: 69px; display: block; position: absolute; left:45px;  @include transition-duration(0.8s); @include transition-property (transform); overflow:hidden;
+    &:hover { @include transform(rotate(360deg)); }
 }
 #logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; position: relative; 
   a { display: block; height: 71px; width: 371px; }
