@@ -3,9 +3,9 @@
     <ul class="nav nav-list"> 
       <li class="nav-header">Distance from Shopify</li>
       <ul class="nav nav-list">
-        <li><%= link_to "All", places_path(tag: params[:tag], category: params[:category]) %></li>
-        <li><%= link_to "Walking distance", places_path(distance: "walking", tag: params[:tag], category: params[:category]) %></li>
-        <li><%= link_to "Taxi ride", places_path(distance: "taxi", tag: params[:tag], category: params[:category]) %></li>
+        <li><%= link_to "All", places_path(tag: params[:tag], category: params[:category]), class: (params[:distance].present? ? '' : "active") %></li>
+        <li><%= link_to "Walking distance", places_path(distance: "walking", tag: params[:tag], category: params[:category]), class: (params[:distance] == 'walking' ? 'active' : '') %></li>
+        <li><%= link_to "Taxi ride", places_path(distance: "taxi", tag: params[:tag], category: params[:category]), class: (params[:distance] == 'taxi' ? 'active' : '') %></li>
       </ul>
       <li class="nav-header">Filter by taste</li>
       <ul class="nav nav-list">

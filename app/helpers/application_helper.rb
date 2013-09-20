@@ -5,4 +5,7 @@ module ApplicationHelper
       link_to(category.humanize, places_path(tag: params[:tag], distance: params[:distance], category: category))
     end
   end
+
+
+
 end
