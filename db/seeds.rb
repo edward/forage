@@ -118,7 +118,11 @@ Ottawa, ON, Canada",
 
   {name: "Atelier", url: "http://www.atelierrestaurant.ca/", address: "540 ROCHESTER ST. OTTAWA, ONTARIO, Canada", phone_number: "613-321-3537", walking_time_in_minutes: 60, tags: ["eat it", "drink it", "molecular gastronomy"]},
 
-  {name: "Anna Thai", url: "http://www.urbanspoon.com/r/250/1450126/restaurant/Wellington-West/Anna-Fine-Thai-Cuisine-Ottawa", address: "91 Holland Avenue, Ottawa, Ontario, Canada", phone_number: "(613) 759 8472", tags: ["restaurant", "thai"], walking_time_in_minutes: 60, tags: ["eat it", "thai"]}
+  {name: "Anna Thai", url: "http://www.urbanspoon.com/r/250/1450126/restaurant/Wellington-West/Anna-Fine-Thai-Cuisine-Ottawa", address: "91 Holland Avenue, Ottawa, Ontario, Canada", phone_number: "(613) 759 8472", tags: ["restaurant", "thai"], walking_time_in_minutes: 60, tags: ["eat it", "thai"]},
+
+  {name: "National Art Gallery", url: "http://gallery.ca", address: "380 Sussex Drive, Ottawa, Canada", phone_number: "(613) 990-1985", tags: ["do it", "art"]},
+
+  {name: "La Petite Mort Gallery", url: "http://www.lapetitemortgallery.com/", address: "306 Cumberland, Ottawa, Canada", phone_number: "(613) 860-1555", tags: ["do it", "art"]}
 ]
 
 places.each do |place|
