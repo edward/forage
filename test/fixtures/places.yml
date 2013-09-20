@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  url: MyString
+  phone_number: MyString
+  address: MyString
+  description: MyText
+  walking_time_in_minutes: 1
+
+two:
+  name: MyString
+  url: MyString
+  phone_number: MyString
+  address: MyString
+  description: MyText
+  walking_time_in_minutes: 1
