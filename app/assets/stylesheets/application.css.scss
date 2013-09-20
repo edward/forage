@@ -43,17 +43,18 @@ h2 { color: #222; }
 .filter-dropdown {
   select { width: 100%; }
 }
-.filter-sidebar { padding: 24px; background: #000; margin-right: - 60px; margin-top: 20px; border: 4px solid $color-yellow;
+.filter-sidebar { padding: 24px; background: #000; margin-right: -60px;
   .nav-list { padding: 0; }
   .nav-list > li > ul > li > a { padding: 0 12px; color: #FFF; }
-  .nav-list li a { text-shadow: none; color: $color-yellow; }
+  .nav-list li a { text-shadow: none; color: #999; }
+  .nav-list > li > a, .nav-list .nav-header {margin-right: 15px;}
   
   .nav-list li a:hover, .nav-list li a.active { color: $color-yellow; background: #ffcb27; }
-  .nav-list li a:hover { background: #ffcb27; }
+  .nav-list li a:hover { background: #222; }
   .nav-list .nav-list { margin: 0 12px 12px 12px; }
-  .nav-list li a.active { color: #FFF; }
+  .nav-list li a.active { color: #000; }
   .nav-list .nav-header { text-shadow: none; color: #FFF; padding: 0 0 6px 0; margin: 0 0 12px 0; }
-  .nav-header { color: tint(#246627,40%); font-family: $serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid $color-yellow; margin: 0 0 12px 0; }
+  .nav-header { color: tint(#246627,40%); font-family: $serif; font-weight: normal; font-style: italic; font-size: 16px; text-transform: none; border-bottom: 2px solid #222; margin: 0 0 12px 0; }
 }
 
 .content { background: #FFF; padding: 30px;
@@ -74,7 +75,7 @@ h2 { color: #222; }
       display: block;
       position: absolute;
       border-radius: 40px;
-      border: 4px solid #333;
+      border: 4px solid #666;
       background: #FFF;
       top: 6px;
       left: 0px;
@@ -85,7 +86,7 @@ h2 { color: #222; }
       font-weight: bold;
     }
     &:hover:before {
-      background: #da4c3f;
+      background: #666;
       color: #FFF;
     }
     &:after {
@@ -120,6 +121,9 @@ h2 { color: #222; }
   .place-address {
     color: #999;
   }
+  .place-phone {
+    color: #666;
+  }
 }
 
 
@@ -130,7 +134,7 @@ h2 { color: #222; }
 #logo { background: asset_url('logo.png') 0 0 no-repeat; width: 371px; height: 71px; margin: 0 auto; position: relative; 
   a { display: block; height: 71px; width: 371px; }
 } 
-#tagline { color: #000; font-family: $serif; font-size: 34px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
+#tagline { color: #000; font-family: $serif; font-size: 24px; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 48px; }
 
 #place-info {
   background-color: #fff; padding: 30px;
