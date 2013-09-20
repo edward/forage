@@ -19,8 +19,9 @@
     <div class="row">
       <div class="span12">
         <ul class="nav nav-pills">
-          <li class="nav-item active"><a href="">Eat it</a></li>
-          <li class="nav-item"><a href="">Do it</a></li>
+          <li class="nav-item active"><%= link_to "Eat it", places_path(category: "eat it") %></li>
+          <li class="nav-item"><%= link_to "Drink it", places_path(category: "drink it") %></li>
+          <li class="nav-item"><%= link_to "Do it", places_path(category: "do it") %></li>
         </ul>
       </div>
     </div>
