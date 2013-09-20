@@ -14,7 +14,7 @@ drink_it = [
      phone_number: "613-760-4771",
      walking_time_in_minutes: 7,
      tags: ["Eat it", "Bar", "Restaurant"],
-     tagline: "Their constitution: Food, drink and good company."},
+     description: "Their constitution: Food, drink and good company."},
 
   {name: "Barrymore's Music Hall", 
    url: "http://www.barrymores.on.ca/",
@@ -22,7 +22,7 @@ drink_it = [
    phone_number: "613-565-9999",
    walking_time_in_minutes: 30,
    tags: ["Drink It", "Club", "Indie", "Mowtown", "90's night", "Theme night", "Dancing"],
-   tagline: "One of Ottawa's biggest nightclubs, that features 80s & 90s themed nights."},
+   description: "One of Ottawa's biggest nightclubs, that features 80s & 90s themed nights."},
 
   {name: "Junxion", 
    url: "http://www.thejunxionottawa.com/",
@@ -30,7 +30,7 @@ drink_it = [
    phone_number: "613-241-2868",
    walking_time_in_minutes: 5,
    tags: ["Drink It", "Club", "Dancing", "Top 40", "House", "Live Music"],
-   tagline: "Great bar in the Market that's open 5 days a week!"},
+   description: "Great bar in the Market that's open 5 days a week!"},
 
   {name: "Zaphods", 
    url: "http://zaphods.ca/",
@@ -38,7 +38,7 @@ drink_it = [
    phone_number: "613-562-1010",
    walking_time_in_minutes: 3,
    tags: ["Drink It", "Club", "Indie", "Dance", "Live Music"],
-   tagline: "Zaphods welcomes everyone and anyone to their grundge club."},   
+   description: "Zaphods welcomes everyone and anyone to their grundge club."},   
    
   {name: "Mercury Lounge", 
    url: "http://www.mercurylounge.com/",
@@ -46,7 +46,7 @@ drink_it = [
    phone_number: "613-789-5324",
    walking_time_in_minutes: 4,
    tags: ["Drink It", "Club", "Top 40", "LGBTQ Nights", "Soul"],
-   tagline: "Enjoy a night out in this twenty-first century sould club."},
+   description: "Enjoy a night out in this twenty-first century sould club."},
 
   {name: "Hooleys", 
    url: "http://www.hooleyspub.com/",
@@ -54,7 +54,7 @@ drink_it = [
    phone_number: "613-231-3888",
    walking_time_in_minutes: 15,
    tags: ["Drink It", "Club", "Dance", "Theme Nights", "Top 40"],
-   tagline: "This pub turns into a club after 11. Get ready to dance!"},
+   description: "This pub turns into a club after 11. Get ready to dance!"},
 
    {name: "The Senate Sports Tavern & Eatery", 
      url: "http://www.thesenate.ca/",
@@ -574,7 +574,7 @@ eat_it = [
    phone_number: "613-562-0674",
    walking_time_in_minutes: 4,
    tags: ["Drink It", "Club", "Pub", "Live Music", "Top 40"],
-   tagline: "If you love live music and an Irish pub feel, then this is your place! "},
+   description: "If you love live music and an Irish pub feel, then this is your place! "},
 
   {name: "Smoque Shack", 
   url: "http://www.smoqueshack.com/",
