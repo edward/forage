@@ -37,11 +37,9 @@ a { color: #000; }
 .filter-dropdown {
   select { width: 100%; }
 }
-.filter-sidebar { background-color: #2d2a28; 
-  a { color: #fff; }
+.filter-sidebar { background: #bbd7bd; padding: 10px 0;
   .nav-list > li > a, .nav-list .nav-header { text-shadow: none; }
-  .nav-header { color: #fff; }
-
+  .nav-header { color: #714e2c; font-family: 'Merriweather', serif; font-size: 16px; text-transform: none; }
 }
 
 #header { padding-top: 60px; }
