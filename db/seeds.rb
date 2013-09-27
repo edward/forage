@@ -48,13 +48,13 @@ drink_it = [
    tags: ["Drink It", "Club", "Top 40", "LGBTQ Nights", "Soul"],
    description: "Enjoy a night out in this twenty-first century sould club."},
 
-  {name: "Hooleys", 
+  {name: "Hooley’s Pub", 
    url: "http://www.hooleyspub.com/",
    address: "292 Elgin Street, Ottawa, ON, K2P 1M3,",
    phone_number: "613-231-3888",
    walking_time_in_minutes: 15,
-   tags: ["Drink It", "Club", "Dance", "Theme Nights", "Top 40"],
-   description: "This pub turns into a club after 11. Get ready to dance!"},
+   tags: ["Drink It", "pub", "patio", "Club", "Dance", "Theme Nights", "Top 40"],
+   description: "This pub turns into a club after 11. Get ready to dance! Alternatively, sneak downstairs to hear some live comedy."},
 
    {name: "The Senate Sports Tavern & Eatery", 
      url: "http://www.thesenate.ca/",
@@ -69,13 +69,14 @@ drink_it = [
      address: "137 Murray Street, Ottawa, ON, K1N5M7",
      phone_number: "613-241-3533",
      walking_time_in_minutes: 4,
-     tags: ["eat it", "Intimate", "Bar"],
-     description: "The Chez Lucien burger will change your life."},
+     tags: ["eat it", "drink it", "Intimate", "Bar"],
+     description: "The Chez Lucien burger will change your life.",
+     price_range: 2},
 
    {name: "Sir John A Pub", 
      url: "http://www.sirjohna.ca/",
      address: "284 Elgin Street, Ottawa, ON, K2P1M3",
-     phone_number: "613-695-5523",
+     phone_number: "(613) 567-2746",
      walking_time_in_minutes: 23,
      tags: ["Bar", "Pub", "eat it", "Patio"],
      description: "Largest selection of craft beer in Centretown."},
@@ -85,7 +86,7 @@ drink_it = [
      address: "283 Elgin Street, Ottawa, ON, K2P0L4",
      phone_number: "613-233-2219",
      walking_time_in_minutes: 23,
-     tags: ["Bar", "Pub", "eat it", "Patio", "Rooftop Patio"],
+     tags: ["Bar", "Pub", "eat it", "drink it", "Patio", "Rooftop Patio"],
      description: "A three-level pub in a more than 100-year-old heritage building."},
 
    {name: "Heart & Crown", 
@@ -93,7 +94,7 @@ drink_it = [
      address: "67 Clarence Street, Ottawa, ON, K1N5P5",
      phone_number: "613-562-0674",
      walking_time_in_minutes: 4,
-     tags: ["eat it", "Bar", "Pub", "Patio", "Irish", "Dancing", "Live Music"],
+     tags: ["eat it", "drink it", "Bar", "Pub", "Patio", "Irish", "Dancing", "Live Music"],
      description: "You may get lost in this maze of Irish Pubs, but with the live music and bars aplenty, you won't mind."},
 
    {name: "The Honest Lawyer", 
@@ -135,14 +136,6 @@ drink_it = [
      walking_time_in_minutes: 59,
      tags: ["Bar", "Intimate"],
      description: "Unique cocktails and munchies. Try their signature caesar!"},
-
-   {name: "Hooley's", 
-     url: "http://www.hooleyspub.com/",
-     address: "292 Elgin Street, Ottawa, ON, K2P1M3",
-     phone_number: "613-231-3888",
-     walking_time_in_minutes: 24,
-     tags: ["Bar", "Pub", "Dancing", "Patio"],
-     description: "Sneak downstairs to hear some live comedy."}, 
 
    {name: "Clock Tower Brew Pub", 
      url: "http://clocktower.ca/",
@@ -225,10 +218,11 @@ do_it = [
    walking_time_in_minutes: 30,
    tags: ["Tourist Attraction", "Museum"],
    description: "Dinosaurs and spiders and blue whales, oh my! The castle housing Canada’s Museum of Nature features more than 10 million artifacts – including a 20 foot long blue whale skeleton. Terrified of tarantulas? Stay away from the Animalium, which features all kinds of creepy crawlers."}, 
+
  {name: "Canadian Museum of History", 
    url: "http://www.civilization.ca/home",
    address: "100 Rue Laurier, Gatineau, QC, K1A0M8",
-   phone_number: "819-776-7000",
+   phone_number: "1-800-555-5621",
    walking_time_in_minutes: 25,
    tags: ["Tourist Attraction", "Museum"],
    description: "This national museum (formerly called the Museum of Civilization) celebrates the 20,000 year history and cultural diversity of humans, with a focus on Canadian people. The museum’s roots stretch back to 1856, making it one of North America’s oldest cultural institutions."}, 
@@ -260,7 +254,6 @@ do_it = [
  {name: "Hog's Back Falls", 
    url: "http://www.ncc-ccn.gc.ca/places-to-visit/parks-paths/hog%E2%80%99s-back-park",
    address: "Hog's Back Road, Ottawa, ON, K1A0M2",
-   phone_number: "613-239-5000",
    walking_time_in_minutes: 105,
    tags: ["Tourist Attraction", "Nature", "Walking"],
    description: "If water is therapeutic, waterfalls are a full-on therapy session. You can find the falls inside Hog’s Back Park on the Rideau River. There’s a concession stand for snacks, which is licensed to sell alcohol. For real. Go get yourself a (legal) beer in a (beautiful) public place."}, 
@@ -284,7 +277,6 @@ do_it = [
  {name: "Confederation Park", 
    url: "http://www.ncc-ccn.gc.ca/places-to-visit/parks-paths/confederation-park",
    address: "Confederation Park, Ottawa, ON, K1P5J2",
-   phone_number: "613-239-5000",
    walking_time_in_minutes: 17,
    tags: ["Tourist Attraction", "Park", "Walking"],
    description: "There’s always something going on in Confederation Park – Canada Day festivities, Winterlude activities, the Ottawa International Jazz Festival, street performers or just passersby that are reeeally fun to people-watch. You’ll encounter many memorials, including a fountain for Colonel By."}, 
@@ -292,7 +284,6 @@ do_it = [
  {name: "Nepean Point", 
    url: "http://www.ncc-ccn.gc.ca/places-to-visit/parks-paths/nepean-point-astrolabe-theatre",
    address: "Alexandra Bridge, Ottawa, ON",
-   phone_number: "613-239-5000",
    walking_time_in_minutes: 13,
    tags: ["Lookout", "Tourist Attraction", "Nature"],
    description: "One of the best views of the city. Hang out with French explorer Samuel de Champlain – atop the vista sits a statue of him holding his famous astrolabe (read: old-school navigational tool) next to an amphitheatre called Astrolabe Theatre. A great place to escape the city noise."}, 
@@ -406,7 +397,7 @@ eat_it = [
    {name: "Navarra", 
    url: "http://www.urbanspoon.com/r/250/1346729/restaurant/ByWard-Market-Lower-Town/Navarra-Ottawa",
    address: "370 Elgin Street, Ottawa, ON, K2P1M9",
-   phone_number: "613-231-2070",
+   phone_number: "(613) 241-5500",
    walking_time_in_minutes: 15,
    tags: ["eat it", "Mexican", "Tapas", "International", "Gluten free friendly"],
    description: "This place believes in sustainable agriculture and slow food",
@@ -505,6 +496,7 @@ eat_it = [
    url: "https://www.facebook.com/eatelcamino",
    address: "380 Elgin Street, Ottawa, Ontario",
    walking_time_in_minutes: 30,
+   phone_number: "(613) 422-2800",
    tags: ["eat it", "drink it", "tacos", "Mexican", "Thai"],
    description: "Fantastic fusion tacos and snacks!",
    price_range: 2},
@@ -513,6 +505,7 @@ eat_it = [
    url: "http://www.bowich.ca/",
    address: "155 Bank Street, Ottawa, Canada",
    walking_time_in_minutes: 25,
+   phone_number: "(613) 695-8828",
    tags: ["eat it", "lunch", "brunch", "lunch", "sandwiches"],
    description: "Great place to grab lunch.",
    price_range: 1},
@@ -521,6 +514,7 @@ eat_it = [
    url: "http://jakskitchen.com/",
    address: "479 Bronson Ave, Ottawa, Canada",
    walking_time_in_minutes: 45,
+   phone_number: "(613) 230-2088",
    tags: ["eat it", "brunch","international"],
    description:"Great food from bruch to dinner",
    price_range: 3},
@@ -531,15 +525,6 @@ eat_it = [
    phone_number: "(613) 244-1661",
    walking_time_in_minutes: 5,
    tags: ["eat it"]},
-
-  {name: "Chez Lucien",
-   url: "http://www.urbanspoon.com/r/250/1346728/restaurant/ByWard-Market-Lower-Town/Chez-Lucien-Ottawa",
-   address: "137 Murray Street, Ottawa, Canada",
-   phone_number: "(613) 241-3533",
-   walking_time_in_minutes: 5,
-   tags: ["eat it", "drink it"],
-   description:"The Chez Lucien burger will change your life.",
-   price_range: 2},
 
   {name: "Genji Sushi",
    url: "http://www.genji.ca/main4.html/",
@@ -567,14 +552,6 @@ eat_it = [
    tags: ["eat it", "drink it", "Gluten free friendly", "vegan friendly", "International"],
    description:"A restaurant that feels like home.",
    price_range:3},
-   
-  {name: "Heart and Crown", 
-   url: "http://www.heartandcrown.ca/byward.aspx",
-   address: "67 Clarence Street, Ottawa, ON, K1N 5P5,",
-   phone_number: "613-562-0674",
-   walking_time_in_minutes: 4,
-   tags: ["Drink It", "Club", "Pub", "Live Music", "Top 40"],
-   description: "If you love live music and an Irish pub feel, then this is your place! "},
 
   {name: "Smoque Shack", 
   url: "http://www.smoqueshack.com/",
@@ -684,8 +661,7 @@ eat_it = [
   description: "Communal seating and a whole lot of bourbon beverages.",
   price_range: 3},
 
-  {name: "Slice & Co.", 
-  #url: "http://union613.ca/",
+  {name: "Slice & Co.",
   address: "399 Elgin Street, Ottawa, ON, K2P 0J8",
   phone_number: "613-627-2345",
   walking_time_in_minutes: 26,
@@ -783,13 +759,6 @@ eat_it = [
   tags: ["eat it", "thai"],
   description: "Best thai in Ottawa",
   price_range: 2},
-  
-  {name: "Le Boulanger Francais", 
-   url: "http://www.bennysbistro.ca/bakery/", 
-   address: "119 Murray Street, Ottawa, Canada", 
-   phone_number: "613-789-7941", 
-   walking_time_in_minutes: 10, 
-   tags: ["eat it", "french", "bakery"]},
 
   {name: "Bread&Sons", 
    url: "http://www.breadandsons.ca/",
@@ -820,4 +789,9 @@ eat_it.each do |place|
   place.tag_list.add(tags)
   place.tag_list.add("eat it")
   place.save
+end
+
+Place.tagged_with("Bar").all.each do |place|
+  place.tag_list.add("drink it")
+  place.save!
 end
