@@ -1,1 +1,1 @@
-Forage::Application.config.google_auth.domain = 'jadedpixel.com'
+Forage::Application.config.google_auth.domain = 'shopify.com'
