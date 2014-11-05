@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bourbon'
 gem 'acts-as-taggable-on'
-gem 'google_auth', git: 'git://github.com/Shopify/google_auth.git', ref: '555303d941a5128dbf5a15d06d13b95b76c5dd81' # Rails 4 compatibility and logout
+gem 'google_auth', git: 'git://github.com/Shopify/google_auth.git', ref: '8b415aac41c53f0d979c6880f36519812e7416f3' # Rails 4 compatibility and logout
 gem 'newrelic_rpm'
 
 group :doc do
