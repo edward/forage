@@ -12,6 +12,7 @@ gem 'bourbon'
 gem 'acts-as-taggable-on'
 gem 'google_auth', git: 'git://github.com/Shopify/google_auth.git', ref: '8b415aac41c53f0d979c6880f36519812e7416f3' # Rails 4 compatibility and logout
 gem 'newrelic_rpm'
+gem 'figaro'
 
 group :doc do
   gem 'sdoc', require: false

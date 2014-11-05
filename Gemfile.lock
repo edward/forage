@@ -74,6 +74,8 @@ GEM
     eventmachine (1.0.3)
     execjs (2.2.1)
     fastercsv (1.5.5)
+    figaro (1.0.0)
+      thor (~> 0.14)
     haml (4.0.5)
       tilt
     hashie (3.3.1)
@@ -206,6 +208,7 @@ DEPENDENCIES
   bourbon
   brakeman
   coffee-rails (~> 4.0.0)
+  figaro
   google_auth!
   jquery-rails
   newrelic_rpm
