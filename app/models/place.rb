@@ -5,9 +5,8 @@ class Place < ActiveRecord::Base
 
   acts_as_taggable
 
-  validate :name, :address, presence: true
+  validates :name, :address, presence: true
 
   scope :walking_distance, -> { where("walking_time_in_minutes <= ?", WALKING_DISTANCE_MINUTES) }
   scope :taxi_distance, -> { where("walking_time_in_minutes > ?", WALKING_DISTANCE_MINUTES) }
-
 end
