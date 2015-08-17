@@ -8,7 +8,7 @@ class Place < ActiveRecord::Base
   acts_as_taggable
 
   validates :name, :address, presence: true
-  validates :url, url: true, allow_nil: true
+  validates :url, url: true, allow_blank: true
 
   scope :walking_distance, -> { where("walking_time_in_minutes <= ?", WALKING_DISTANCE_MINUTES) }
   scope :taxi_distance, -> { where("walking_time_in_minutes > ?", WALKING_DISTANCE_MINUTES) }
