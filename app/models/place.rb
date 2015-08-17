@@ -1,3 +1,5 @@
+require 'url_validator'
+
 class Place < ActiveRecord::Base
   RESERVED_TAGS = ["eat it", "drink it", "do it"]
   WALKING_DISTANCE_MINUTES = 15
@@ -6,6 +8,7 @@ class Place < ActiveRecord::Base
   acts_as_taggable
 
   validates :name, :address, presence: true
+  validates :url, url: true, allow_nil: true
 
   scope :walking_distance, -> { where("walking_time_in_minutes <= ?", WALKING_DISTANCE_MINUTES) }
   scope :taxi_distance, -> { where("walking_time_in_minutes > ?", WALKING_DISTANCE_MINUTES) }
