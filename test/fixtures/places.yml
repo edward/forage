@@ -2,7 +2,7 @@
 
 one:
   name: MyString
-  url: MyString
+  url: http://shopify.com
   phone_number: MyString
   address: MyString
   description: MyText
@@ -10,7 +10,7 @@ one:
 
 two:
   name: MyString
-  url: MyString
+  url: http://shopify.com
   phone_number: MyString
   address: MyString
   description: MyText
