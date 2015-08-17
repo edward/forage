@@ -26,7 +26,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'thin'
   gem 'quiet_assets'
-  gem "brakeman", :require => false
+  gem "brakeman", require: false
+  gem 'mocha', require: false
 end
 
 group :production do
