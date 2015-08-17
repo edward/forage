@@ -2,8 +2,7 @@ require 'uri'
 
 class UrlValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    return true if options[:allow_nil] && value.nil?
-    record.errors.add attribute, "must be a URL starting with http" unless valid_url?(value)
+    record.errors.add attribute, "must be a URL starting with http or https" unless valid_url?(value)
   end
 
   private
