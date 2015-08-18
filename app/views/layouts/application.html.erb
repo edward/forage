@@ -14,17 +14,10 @@
 </head>
 <body>
   <div class="container" data-yield="main">
-    <i class="forage-trail"><%= image_tag("bg.png") %></i>
-    <div class="login-link pull-right">
-      <% if current_user %>
-        <%= current_user.name %>
-        <%= link_to "Logout", logout_path, method: :delete %>
-      <% else %>
-        <%= link_to "Login as Shopify", login_path %>
-      <% end %>
-    </div>
-
     <div id="header" class="row">
+      <div class="span12">
+        <i class="forage-trail"><%= image_tag("bg.png") %></i>
+      </div>
       <div class="span12">
         <h1 id="logo" class="hide-text"><i id="logo-compass"></i><%= link_to "Forage", places_path %></h1>
         <h2 id="tagline">Never be lost again.</h2>
