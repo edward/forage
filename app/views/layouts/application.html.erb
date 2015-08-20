@@ -16,11 +16,11 @@
   <div class="container" data-yield="main">
     <i class="forage-trail"><%= image_tag("bg.png") %></i>
     <div class="login-link pull-right">
-      <% if current_user %>
-        <%= current_user.name %>
-        <%= link_to "Logout", logout_path, method: :delete %>
+      <% if session[:employee] %>
+        <%= session[:employee][:name] %>
+        <%= link_to "Logout", logout_path %>
       <% else %>
-        <%= link_to "Login as Shopify", login_path %>
+        <%= link_to "Login as Shopify", '/auth/google_oauth2' %>
       <% end %>
     </div>
 

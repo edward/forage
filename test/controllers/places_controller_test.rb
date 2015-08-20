@@ -12,7 +12,7 @@ class PlacesControllerTest < ActionController::TestCase
   end
 
   test "should require authentication to /new, /edit, /create, /update, /destroy" do
-    login_url = "http://test.host/login"
+    login_url = "http://test.host/auth/google_oauth2"
 
     get :new
     assert_redirected_to login_url
@@ -76,7 +76,11 @@ class PlacesControllerTest < ActionController::TestCase
   private
 
   def log_in
-    user = User.create!(name: "Example", email: "hi@example.org", uid: "1")
-    session[:user_id] = user.id
+    session[:employee] = {
+      email: 'tobi@shopify.com',
+      name: 'Tobias Lutke',
+      first_name: 'Tobias',
+      last_name: 'Lutke'
+    }.with_indifferent_access
   end
 end
