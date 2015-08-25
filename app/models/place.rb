@@ -3,7 +3,7 @@ require 'url_validator'
 class Place < ActiveRecord::Base
   RESERVED_TAGS = ["eat it", "drink it", "do it"]
   WALKING_DISTANCE_MINUTES = 15
-  SHOPIFY_OTTAWA_ADDRESS = "150 Elgin Street, Ottawa, Ontario, Canada"
+  SHOPIFY_OTTAWA_ADDRESS = "150 Elgin Street, Ottawa, ON, K2P1L4"
 
   acts_as_taggable
 
