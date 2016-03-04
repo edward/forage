@@ -4,7 +4,7 @@
   <title>Forage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  
+
   <link href='http://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
 
 <link href='http://fonts.googleapis.com/css?family=Lato:400,300italic|Sintony' rel='stylesheet' type='text/css'>
@@ -16,11 +16,11 @@
   <div class="container" data-yield="main">
     <i class="forage-trail"><%= image_tag("bg.png") %></i>
     <div class="login-link pull-right">
-      <% if current_user %>
-        <%= current_user.name %>
-        <%= link_to "Logout", logout_path, method: :delete %>
+      <% if session[:employee] %>
+        <%= session[:employee][:name] %>
+        <%= link_to "Logout", logout_path %>
       <% else %>
-        <%= link_to "Login as Shopify", login_path %>
+        <%= link_to "Login as Shopify", '/auth/google_oauth2' %>
       <% end %>
     </div>
 

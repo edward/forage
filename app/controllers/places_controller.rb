@@ -1,4 +1,7 @@
 class PlacesController < ApplicationController
+  include ApplicationHelper
+
+  before_action :ensure_authenticated, except: [:index, :show]
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
   def index

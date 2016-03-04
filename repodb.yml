@@ -1,0 +1,9 @@
+# repodb metadata: see https://github.com/Shopify/repodb for help
+classification: beta
+oncall:
+  - edward
+service_urls:
+  - https://shopify-forage.herokuapp.com
+  - https://forage.shopify.io
+ci_urls:
+  - https://circleci.com/gh/Shopify/forage

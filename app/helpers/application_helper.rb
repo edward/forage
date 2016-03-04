@@ -24,4 +24,10 @@ module ApplicationHelper
 
   end
 
+  def ensure_authenticated
+    unless session[:employee]
+      redirect_to('/auth/google_oauth2')
+    end
+  end
+
 end
